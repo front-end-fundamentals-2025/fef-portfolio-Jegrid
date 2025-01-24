@@ -1,0 +1,23 @@
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-form label {
+  display: block;
+}
+
+.contact-span {
+  padding: 10px;
+}
