@@ -10,24 +10,33 @@
   </head>
   <body>
     <nav>
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-      <li>
-        <a href="contact.html">Contact</a>
-      </li>
+      <ul class="nav-list">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
     </nav>
 
     <div class="contact-form-container">
       <form class="contact-form">
-        <span class="contact-span">
+        <span class="contact-span" id="contact-top-span">
           <label for="name">What's your name?</label>
-          <input type="text" id="name" name="name" placeholder="John Smith" />
+          <input
+            class="contact-input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="John Smith"
+          />
         </span>
 
         <span class="contact-span">
           <label for="email">What's your email?</label>
           <input
+            class="contact-input"
             type="text"
             id="email"
             name="email"
@@ -38,6 +47,7 @@
         <span class="contact-span">
           <label for="msg">Your message</label>
           <input
+            class="contact-input"
             type="text"
             id="msg"
             name="msg"
