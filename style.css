@@ -1,7 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 :root {
   --colour-white: #ffffff;
   --colour-black: #1c1d20;
   --font: "Quicksand", sans-serif;
+  --header-font: "Poppins", sans-serif;
 }
 
 body {
@@ -11,44 +17,59 @@ body {
 }
 
 .contact-form-container {
+  font-family: var(--font);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 100;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin: 15rem;
-  width: 30%;
+  width: 40%;
 }
 
 .contact-form label {
   display: block;
   font-size: 1.5em;
+  font-family: var(--header-font);
 }
 
 .contact-span {
   padding: 3em;
   border-bottom: 1px solid var(--colour-white);
+  font-weight: 200;
 }
 
 #contact-top-span {
   border-top: 1px solid var(--colour-white);
 }
+
 .contact-sidebar {
-  margin-bottom: 33rem;
+  padding: 0em 0em 45em 10em;
+  font-family: var(--header-font);
+  font-weight: 200;
+}
+
+#contact-mainheader {
+  font-family: var(--header-font);
+  font-weight: 400;
+  font-size: clamp(2rem, 4vw, 5rem);
+  padding-bottom: 1.5em;
+}
+.contact-sidebar h4 {
+  font-weight: 500;
 }
 
 #contact-sidebar-header {
   font-size: 0.8em;
   opacity: 0.5;
+  padding-bottom: 1em;
 }
 
 .contact-sidebar-span {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .contact-input {
@@ -60,6 +81,7 @@ body {
   width: 100%;
   padding-top: 1em;
   outline: none;
+  resize: none;
 }
 
 .nav-list {
@@ -67,6 +89,7 @@ body {
   justify-content: right;
   align-items: center;
   padding: 2em;
+  font-family: var(--header-font);
 
   text-decoration: none;
   position: relative;
@@ -87,4 +110,26 @@ body {
   font-weight: 300;
   position: relative;
   padding: 2rem;
+}
+
+#contact-btn {
+  font-family: var(--header-font);
+  background: transparent;
+  color: var(--colour-white);
+  display: flex;
+
+  opacity: 0.8;
+  margin: 3em 0em 3em 9.5em;
+
+  text-decoration: none;
+
+  /* Partially Responsive */
+  font-size: clamp(1em, 1.3vw, 3em);
+  height: clamp(4em, 4vw, 4.25em);
+  width: clamp(10em, 10vw, 20em);
+
+  border-radius: 2.125em;
+  border-style: solid;
+  border-width: 3px;
+  border-color: var(--colour-white);
 }
