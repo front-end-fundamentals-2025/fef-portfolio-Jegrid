@@ -58,14 +58,13 @@ body {
   font-size: clamp(2rem, 4vw, 5rem);
   padding-bottom: 1.5em;
 }
-.contact-sidebar h4 {
-  font-weight: 500;
-}
 
-#contact-sidebar-header {
+.small-header {
+  font-family: var(--header-font);
   font-size: 0.8em;
   opacity: 0.5;
   padding-bottom: 1em;
+  font-weight: 500;
 }
 
 .contact-sidebar-span {
@@ -132,4 +131,22 @@ body {
   border-style: solid;
   border-width: 3px;
   border-color: var(--colour-white);
+}
+
+.about-me-wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+
+  padding-left: 6em;
+  margin-top: 2.5em;
+  gap: 1.5em;
+}
+
+.about-me-wrap p {
+  font-size: 1.5em;
+}
+
+.about-me-wrap h3 {
+  padding: 2.5em 0em 0em 0em;
 }
