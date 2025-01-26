@@ -14,6 +14,7 @@ body {
   font-family: var(--font);
   background-color: var(--colour-black);
   color: var(--colour-white);
+  font-weight: 200;
 }
 
 .contact-form-container {
@@ -39,7 +40,6 @@ body {
 .contact-span {
   padding: 3em;
   border-bottom: 1px solid var(--colour-white);
-  font-weight: 200;
 }
 
 #contact-top-span {
@@ -47,15 +47,15 @@ body {
 }
 
 .contact-sidebar {
-  padding: 0em 0em 45em 10em;
+  padding-left: 10em;
+  margin-bottom: 54em;
   font-family: var(--header-font);
-  font-weight: 200;
 }
 
 #contact-mainheader {
   font-family: var(--header-font);
   font-weight: 400;
-  font-size: clamp(2rem, 4vw, 5rem);
+  font-size: clamp(2rem, 3.5vw, 5rem);
   padding-bottom: 1.5em;
 }
 
@@ -101,14 +101,14 @@ body {
 }
 
 .nav-list a {
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-decoration: none;
   letter-spacing: 2px;
 
   color: var(--colour-white);
   font-weight: 300;
   position: relative;
-  padding: 2rem;
+  padding: 1.8em;
 }
 
 #contact-btn {
@@ -129,7 +129,7 @@ body {
 
   border-radius: 2.125em;
   border-style: solid;
-  border-width: 3px;
+  border-width: 1px;
   border-color: var(--colour-white);
 }
 
@@ -144,7 +144,7 @@ body {
 }
 
 .about-me-wrap p {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .about-me-wrap h3 {
