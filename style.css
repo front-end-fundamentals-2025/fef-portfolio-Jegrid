@@ -11,6 +11,14 @@
   --header-font: "Poppins", sans-serif;
 }
 
+html {
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
 body {
   font-family: var(--font);
   background-color: var(--colour-black);
@@ -138,13 +146,14 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 50%;
+  text-wrap: balance;
 
   margin-left: 4em;
   gap: 1.5em;
 }
 
 .about-me-wrap p {
-  font-size: 1.5rem;
+  font-size: clamp(0.5rem, 1.5rem, 2rem);
 }
 
 .about-me-wrap h3 {
@@ -155,4 +164,13 @@ body {
   font-family: var(--header-font);
   font-weight: 400;
   font-size: clamp(2rem, 3.5vw, 5rem);
+}
+
+/* ! MEDIA QUERIES */
+
+@media screen and (max-width: 850px) {
+  .about-me-wrap {
+    padding-left: clamp(0.5rem, 1rem, 2.5rem);
+    width: 100%;
+  }
 }
