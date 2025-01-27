@@ -4,6 +4,7 @@
 }
 
 :root {
+  --colour-white-faded: rgba(255, 255, 255, 0.5);
   --colour-white: #ffffff;
   --colour-black: #1c1d20;
   --font: "Quicksand", sans-serif;
@@ -39,11 +40,11 @@ body {
 
 .contact-span {
   padding: 3em;
-  border-bottom: 1px solid var(--colour-white);
+  border-bottom: 1px solid var(--colour-white-faded);
 }
 
 #contact-top-span {
-  border-top: 1px solid var(--colour-white);
+  border-top: 1px solid var(--colour-white-faded);
 }
 
 .contact-sidebar {
