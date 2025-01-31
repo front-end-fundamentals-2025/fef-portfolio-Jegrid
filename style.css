@@ -26,6 +26,16 @@ body {
   font-weight: 200;
 }
 
+nav {
+  width: 100%;
+  display: flex;
+
+  justify-content: right;
+  align-items: center;
+
+  min-height: 8vh;
+}
+
 .contact-form-container {
   font-family: var(--font);
   display: flex;
@@ -166,11 +176,39 @@ body {
   font-size: clamp(2rem, 3.5vw, 5rem);
 }
 
+.portfolio-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(50px, 1fr));
+  gap: 2rem;
+  margin: 5rem 5rem 0rem 5rem;
+}
+
+.portfolio-grid-item {
+  display: grid;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  border: 1px solid var(--colour-white);
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.portfolio-grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
 /* ! MEDIA QUERIES */
 
 @media screen and (max-width: 850px) {
   .about-me-wrap {
     padding-left: clamp(0.5rem, 1rem, 2.5rem);
     width: 100%;
+  }
+
+  .portfolio-wrapper {
+    grid-template-columns: repeat(1, minmax(50px, 1fr));
   }
 }
